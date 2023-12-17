@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.running-div-horizontal {
+  position: absolute;
+  margin-top: 50px;
+  animation: runAcross 5s linear infinite;
+}
+
+.running-div-horizontal-2 {
+  margin-top: 25px;
+  position: absolute;
+  animation: runAcross 4s linear infinite;
+}
+
+.running-div-horizontal-3 {
+  position: absolute;
+  animation: runAcross 6s linear infinite;
+}
+
+.running-div-vertical {
+  position: absolute;
+  animation: runDown 5s linear infinite;
+}
+
+@keyframes runAcross {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 100vw;
+  }
+}
+
+@keyframes runDown {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 100vh;
+  }
+}
